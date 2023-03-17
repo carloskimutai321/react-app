@@ -1,14 +1,14 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import CountButton  from './components/CountButton';
+import CountButton  from './components/CountButton/CountButton';
+import SearchBar from './components/SearchBar/SearchBar';
 import './styles/global.css'
 
 // console.log(App)
 const Project = () => {
         return (
                 <div>
-                    <CountButton incrementBy={1} buttonColor={"yellow"}/>
-                    <CountButton incrementBy={5} buttonColor={"green"}/>
+                    <SearchBar/>
                 </div>
         )
 }
